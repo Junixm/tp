@@ -105,7 +105,7 @@ public class RemarkCommandTest {
         assertCommandFailure(remarkCommand, model, Messages.MESSAGE_INVALID_PERSON_DISPLAYED_INDEX);
     }
 
-        @Test
+    @Test
     public void equals() {
         final RemarkCommand standardCommand = new RemarkCommand(INDEX_FIRST_PERSON,
                 new Remark(VALID_REMARK_AMY));

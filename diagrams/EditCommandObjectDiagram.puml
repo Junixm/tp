@@ -1,0 +1,42 @@
+@startuml
+!include style.puml
+skinparam ClassFontColor #000000
+skinparam ClassBorderColor #000000
+skinparam ClassBackgroundColor PERSON_COLOR
+
+title Object Diagram for Editing a Person
+
+package "Last Person Attributes" <<rectangle>> {
+    class Name as "<u>:Name</u>"
+    class Address as "<u>:Address</u>"
+    class Company as "<u>:Company</u>"
+    class Rank as "<u>:Rank</u>"
+    class Duty as "<u>:Duty</u>"
+}
+
+package "Updated Person Attributes" <<rectangle>> {
+    class UpdatedName as  "<u>updatedName:Name</u>"
+    class UpdatedAddress as "<u>updatedAddress:Address</u>"
+    class UpdatedCompany as  "<u>updatedCompany:Company</u>"
+    class UpdatedRank as  "<u>updatedRank:Rank</u>"
+}
+class PersonToEdit as "<u>personToEdit:Person</u>"
+class UpdatedPerson as "<u>updatedPerson:Person</u>"
+
+class EditCommand as "<u>:EditCommand</u>"
+
+EditCommand --> PersonToEdit
+EditCommand --> UpdatedPerson
+PersonToEdit -down[hidden]-> Duty
+
+UpdatedPerson --> Duty
+PersonToEdit --> Name
+PersonToEdit --> Address
+PersonToEdit --> Company
+PersonToEdit --> Rank
+
+UpdatedPerson --> UpdatedName
+UpdatedPerson --> UpdatedAddress
+UpdatedPerson --> UpdatedCompany
+UpdatedPerson --> UpdatedRank
+@enduml

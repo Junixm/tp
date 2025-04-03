@@ -1,0 +1,22 @@
+@startuml
+class FilterCommand {
+    +FilterCommand(predicate: CompanyContainsKeywordsPredicate)
+    +execute()
+}
+
+class CompanyContainsKeywordsPredicate {
+    -keywords: List<String>
+    +test(person: Person): boolean
+}
+
+class Person {
+    -name: String
+    -company: String
+    -phone: String
+    ...
+}
+
+FilterCommand --> CompanyContainsKeywordsPredicate : uses
+CompanyContainsKeywordsPredicate --> Person : tests
+
+@enduml

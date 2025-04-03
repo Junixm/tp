@@ -1,0 +1,36 @@
+@startuml
+!include style.puml
+
+hide footbox
+skinparam sequenceReferenceBackgroundColor #f7807c
+
+actor User
+
+participant ":UI" as Ui UI_COLOR
+participant ":ReassignCommand" as ReassignCommand LOGIC_COLOR
+participant ":Person" as Person MODEL_COLOR
+
+User -> Ui : "reassign 1 d/oldDutyDate nd/newDutyDate"
+activate Ui UI_COLOR
+
+Ui -> ReassignCommand : execute("reassign 1 d/oldDutyDate nd/newDutyDate")
+note right #FFAAAA
+A CommandException would be thrown if either unassignDuty or assignDuty fails.
+end note
+activate ReassignCommand LOGIC_COLOR
+
+ReassignCommand -> Person : unassignDuty(oldDutyDate)
+activate Person MODEL_COLOR
+
+Person --> ReassignCommand
+ReassignCommand -> Person : assignDuty(newDutyDate)
+Person --> ReassignCommand
+deactivate Person
+
+ReassignCommand --> Ui
+deactivate
+
+Ui --> User : Show updated entry
+deactivate Ui
+
+@enduml

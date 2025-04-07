@@ -1,18 +1,19 @@
 @startuml
+hide circle
 class FilterCommand {
-    +FilterCommand(predicate: CompanyContainsKeywordsPredicate)
-    +execute()
+    FilterCommand(predicate: CompanyContainsKeywordsPredicate)
+    execute()
 }
 
 class CompanyContainsKeywordsPredicate {
-    -keywords: List<String>
-    +test(person: Person): boolean
+    keywords: List<String>
+    test(person: Person): boolean
 }
 
 class Person {
-    -name: String
-    -company: String
-    -phone: String
+    name: String
+    company: String
+    phone: String
     ...
 }
 

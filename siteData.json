@@ -50,7 +50,9 @@
         "storage-component": "Storage component",
         "common-classes": "Common classes",
         "implementation": "Implementation",
-        "feature": "FEATURE",
+        "reassign-command": "Reassign Command",
+        "edit-command": "Edit Command",
+        "filter-command": "Filter Command",
         "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
         "appendix-requirements": "Appendix: Requirements",
         "product-scope": "Product scope",
@@ -61,7 +63,8 @@
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
         "deleting-a-person": "Deleting a person",
-        "saving-data": "Saving data"
+        "saving-data": "Saving data",
+        "acknowledgement": "Acknowledgement"
       },
       "headingKeywords": {}
     },
@@ -145,6 +148,23 @@
       "title": "Corey Portfolio Page",
       "headings": {
         "project-hrquickaccess": "Project: HRQuickAccess"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/zihung20.md",
+      "title": "ZiHung Portfolio Page",
+      "headings": {
+        "project-portfolio-page-for-zi-hung": "Project Portfolio Page for Zi Hung",
+        "overview": "Overview",
+        "summary-of-contributions": "Summary of Contributions",
+        "code-contributed": "Code Contributed",
+        "enhancements-implemented": "Enhancements Implemented",
+        "contributions-to-the-user-guide-ug": "Contributions to the User Guide (UG)",
+        "contributions-to-the-developer-guide-dg": "Contributions to the Developer Guide (DG)",
+        "contributions-to-team-based-tasks": "Contributions to Team-Based Tasks",
+        "review-mentoring-contributions": "Review/Mentoring Contributions",
+        "acknowledgements-use-of-ai-tools": "Acknowledgements: Use of AI Tools"
       },
       "headingKeywords": {}
     }

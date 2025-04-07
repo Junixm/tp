@@ -341,6 +341,6 @@ with(this){return _c('h3',{attrs:{"id":"acknowledgement"}},[_v("Acknowledgement"
 with(this){return _c('ul',[_c('li',[_v("The placeholder image was obtained from a third-party source and is allowed for free use. You can find it here: "),_c('a',{attrs:{"href":"https://www.vecteezy.com/vector-art/36594092-man-empty-avatar-vector-photo-placeholder-for-social-networks-resumes-forums-and-dating-sites-male-and-female-no-photo-images-for-unfilled-user-profile"}},[_v("Vecteezy - Man Empty Avatar")]),_v(".")]),_v(" "),_c('li',[_c('strong',[_v("AI Tools and Usage")]),_v(" "),_c('ul',[_c('li',[_c('a',{attrs:{"href":"https://chat.openai.com/"}},[_v("ChatGPT")]),_v(" for fixing documentation (DG, UG) phrases and grammar errors.")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.6.0")]),_v(", generated on Mon, 7 Apr 2025, 21:24:07 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.6.0")]),_v(", generated on Mon, 7 Apr 2025, 23:19:47 GMT+8]")])])])}
 }];
   
